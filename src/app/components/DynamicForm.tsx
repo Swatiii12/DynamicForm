@@ -40,7 +40,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({ formData }) => {
     });
   };
 
-  const renderFormNodes = (nodes: FormNode[], depth = 0): JSX.Element[] => {
+  const renderFormNodes = (nodes: FormNode[]): JSX.Element[] => {
     return nodes.map((node) => {
       const shouldRenderChildren = !!answers[node.id];
       return (
